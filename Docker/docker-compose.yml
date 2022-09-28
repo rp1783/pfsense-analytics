@@ -95,7 +95,7 @@ services:
         max-size: "100M"
 
   grafana:
-    image: grafana/grafana:latest
+    image: grafana/grafana:7.4.2
     env_file:
       - ./grafana.env
     ports:
