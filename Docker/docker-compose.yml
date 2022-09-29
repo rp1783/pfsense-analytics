@@ -103,6 +103,7 @@ services:
     volumes:
       - grafana:/var/lib/grafana
       - ./grafana/provisioning/:/etc/grafana/provisioning
+      - /etc/timezone:/etc/timezone:ro
     links:
       - elasticsearch
       - influxdb
